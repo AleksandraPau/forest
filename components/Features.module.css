@@ -1,0 +1,50 @@
+.features {
+  padding: 80px 10%;
+  background-color: #0B110E;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.card {
+  background-color: #1B2A24; /* Глубокий Deep Pine для карточек */
+  padding: 40px;
+  border: 1px solid rgba(163, 177, 170, 0.1);
+  transition: border-color 0.3s ease;
+}
+
+.card:hover {
+  border-color: #E65A28; /* Подсвечиваем костром */
+}
+
+.cardTitle {
+  color: #FFFFFF;
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.cardText {
+  color: #A3B1AA;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* МЕДИА-ЗАПРОСЫ */
+@media (max-width: 768px) {
+  .features {
+    grid-template-columns: 1fr; /* Карточки встают друг под друга */
+    padding: 60px 24px;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 375px) {
+  .features {
+    padding: 40px 16px;
+  }
+  .card {
+    padding: 24px;
+  }
+}

@@ -1,0 +1,66 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 10%;
+  background-color: #0B110E;
+  border-bottom: 1px solid rgba(163, 177, 170, 0.15); /* Линии Misty Fog Gray */
+}
+
+.logo {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.nav {
+  display: flex;
+  gap: 32px;
+}
+
+.navLink {
+  color: #A3B1AA;
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: color 0.2s ease;
+}
+
+.navLink:hover {
+  color: #E65A28; /* Fox Fire Orange на ховер */
+}
+
+.burger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* МЕДИА-ЗАПРОСЫ */
+@media (max-width: 768px) {
+  .header {
+    padding: 20px 24px;
+  }
+  .nav {
+    display: none; /* Прячем меню на планшетах/мобилках под бургер */
+  }
+  .burger {
+    display: block;
+    width: 24px;
+    height: 18px;
+    border-top: 2px solid #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
+    position: relative;
+  }
+  .burger::before {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: #FFFFFF;
+    top: 6px;
+  }
+}

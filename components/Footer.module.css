@@ -1,0 +1,38 @@
+.footer {
+  padding: 60px 10%;
+  background-color: #0B110E;
+  border-top: 1px solid rgba(163, 177, 170, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.contacts p {
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
+.phone {
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.email {
+  color: #A3B1AA;
+}
+
+.copy {
+  color: rgba(163, 177, 170, 0.5);
+  font-size: 0.85rem;
+}
+
+/* МЕДИА-ЗАПРОСЫ */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 24px;
+  }
+}

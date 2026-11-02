@@ -1,0 +1,70 @@
+.hero {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Центрируем контент */
+  text-align: center;
+  background-color: #0B110E; /* Deep Forest Black */
+  padding: 80px 40px;
+  box-sizing: border-box;
+}
+
+.title {
+  color: #FFFFFF; /* Pure White */
+  font-size: 5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 24px;
+}
+
+/* Логика стилизации тега p внутри модуля */
+.hero p {
+  color: #A3B1AA; /* Misty Fog Gray */
+  font-size: 1.5rem;
+  max-width: 600px;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.cta {
+  background-color: #E65A28; /* Fox Fire Orange */
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 18px 42px;
+  border: 2px solid #E65A28;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.cta:hover {
+  background-color: transparent;
+  color: #E65A28;
+}
+
+/* МЕДИА-ЗАПРОСЫ */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 60vh;
+    padding: 60px 24px;
+  }
+  .title {
+    font-size: 3rem;
+  }
+  .hero p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .title {
+    font-size: 2.2rem;
+  }
+  .cta {
+    width: 100%;
+  }
+}
