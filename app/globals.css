@@ -1,4 +1,21 @@
 :root {
+  font-family: var(--font-inter), sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .text-uppercase-brutal {
+  font-family: var(--font-montserrat), sans-serif;
+}
+
+body {
+  background-color: #0B110E;
+  color: #A3B1AA;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -46,4 +63,4 @@ a {
   html {
     color-scheme: dark;
   }
-}
+} */

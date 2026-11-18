@@ -1,0 +1,158 @@
+.schedule {
+  padding: 100px 10%;
+  background-color: #0B110E;
+  border-top: 1px solid rgba(163, 177, 170, 0.15);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.headerBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 50px;
+  gap: 30px;
+}
+
+.sectionTitle {
+  color: #FFFFFF;
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0 0 12px 0;
+}
+
+.sectionSubtitle {
+  color: #A3B1AA;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.legend {
+  display: flex;
+  gap: 24px;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+/* Стилизация новой триады цветов */
+.bgCrossfit { background-color: #E65A28; }
+.bgFunctional { background-color: #1B2A24; border: 1px solid rgba(163, 177, 170, 0.3); }
+.bgEndurance { background-color: #4A6B5D; }
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 150px 1fr 200px;
+  align-items: center;
+  background-color: rgba(27, 42, 36, 0.2); /* Приглушенный Deep Pine */
+  padding: 30px;
+  border: 1px solid rgba(163, 177, 170, 0.1);
+  transition: all 0.2s ease;
+}
+
+.row:hover {
+  border-color: #E65A28;
+  transform: translateX(4px);
+}
+
+.dateBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.dateText {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.dayText {
+  color: #A3B1AA;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 0.7rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+  color: #FFFFFF;
+}
+
+.tagCrossfit { background-color: #E65A28; }
+.tagFunctional { background-color: #1B2A24; border: 1px solid rgba(163, 177, 170, 0.3); }
+.tagEndurance { background-color: #4A6B5D; }
+
+.tripName {
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+.metaBlock {
+  text-align: right;
+  color: #A3B1AA;
+  font-size: 0.9rem;
+}
+
+.diffValue {
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+/* МЕДИА-ЗАПРОСЫ */
+@media (max-width: 768px) {
+  .headerBlock {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 24px;
+  }
+  .metaBlock {
+    text-align: left;
+  }
+}
+
+@media (max-width: 375px) {
+  .schedule {
+    padding: 60px 16px;
+  }
+  .sectionTitle {
+    font-size: 1.8rem;
+  }
+  .legend {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
